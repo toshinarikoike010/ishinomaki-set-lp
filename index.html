@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>石巻工房 新生活セット 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --oak:    #8b6914;
+      --ink:    #1a1612;
+      --gray:   #6b6560;
+      --gray-lt:#a09890;
+      --border: #e8e2d8;
+      --bg:     #ffffff;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.8;
+      font-size: 15px;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ── */
+    .site-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto; padding: 0 40px;
+      display: flex; align-items: center;
+      height: 56px; gap: 0;
+    }
+    .nav-brand {
+      font-family: 'Noto Serif JP', serif;
+      font-size: .75rem; font-weight: 500;
+      color: var(--ink); letter-spacing: .16em;
+      text-transform: uppercase; white-space: nowrap; margin-right: auto;
+    }
+    .nav-links { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-link {
+      display: inline-block; padding: 6px 14px;
+      font-size: .78rem; font-weight: 400; color: var(--gray-lt);
+      white-space: nowrap; transition: color .16s; letter-spacing: .04em;
+    }
+    .nav-link:hover { color: var(--ink); }
+
+    /* ── HERO ── */
+    .hero-section {
+      max-width: 1120px; margin: 0 auto;
+      padding: 80px 40px 96px;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: center;
+    }
+    @media (max-width: 860px) { .hero-section { grid-template-columns: 1fr; padding: 48px 24px 64px; } }
+    .hero-label {
+      font-size: .72rem; font-weight: 400; letter-spacing: .2em;
+      text-transform: uppercase; color: var(--gray-lt); margin-bottom: 16px;
+    }
+    .hero-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 300; line-height: 1.3;
+      letter-spacing: -.01em; margin-bottom: 22px;
+    }
+    .hero-body { color: var(--gray); line-height: 2; font-size: .97rem; max-width: 400px; }
+    .hero-stats {
+      display: flex; gap: 36px; margin-top: 40px;
+      padding-top: 32px; border-top: 1px solid var(--border);
+    }
+    .stat-num {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.6rem; font-weight: 400;
+      color: var(--ink); display: block; line-height: 1; margin-bottom: 6px;
+    }
+    .stat-lbl { font-size: .72rem; color: var(--gray-lt); letter-spacing: .06em; }
+
+    /* hero visual */
+    .hero-visual {
+      aspect-ratio: 4/3; background: #f0ebe0;
+      border-radius: 2px; overflow: hidden; position: relative;
+    }
+    .rv-floor { position:absolute; bottom:0; left:0; right:0; height:42%;
+      background: linear-gradient(to top,#c8b48a,#d8c8a0);
+      border-top: 1px solid rgba(255,255,255,.3); }
+    .rv-bench { position:absolute; bottom:42%; left:7%; width:110px; height:26px;
+      background:#6b4f28; border-radius:3px 3px 0 0;
+      box-shadow: inset 0 4px 0 rgba(255,255,255,.1), 0 6px 0 #4a3418; }
+    .rv-bench::before { content:''; position:absolute; bottom:-14px; left:10px;
+      width:12px; height:14px; background:#4a3418; border-radius:0 0 2px 2px; box-shadow:68px 0 0 #4a3418; }
+    .rv-shelf { position:absolute; bottom:42%; left:33%; width:14px; height:98px; background:#7a5f38; }
+    .rv-shelf::before { content:''; position:absolute; top:14px; left:-5px; width:24px; height:8px;
+      background:#8b6a40; box-shadow:0 32px 0 #8b6a40, 0 62px 0 #8b6a40; }
+    .rv-shelf::after { content:''; position:absolute; bottom:0; right:-66px; width:14px; height:98px; background:#7a5f38; }
+    .rv-rail { position:absolute; bottom:42%; left:33%; margin-left:-5px; margin-bottom:98px;
+      width:84px; height:8px; background:#8b6a40; }
+    .rv-hanger { position:absolute; top:20%; right:16%; width:72px; height:3px; background:#5a4020; }
+    .rv-hanger::before { content:''; position:absolute; top:-24px; left:50%; transform:translateX(-50%);
+      width:2px; height:24px; background:#5a4020; }
+    .rv-coat { position:absolute; top:24%; right:20%; width:26px; height:36px;
+      background:#8a5a30; border-radius:12px 12px 3px 3px; box-shadow:18px 0 0 #6a4020; }
+    .rv-stool { position:absolute; bottom:42%; right:10%; width:44px; height:16px;
+      background:#9a7040; border-radius:50% 50% 2px 2px; box-shadow:0 3px 0 #6b4f28; }
+    .rv-stool::before { content:''; position:absolute; top:16px; left:7px;
+      width:5px; height:20px; background:#5a3d1a; border-radius:2px; box-shadow:24px 0 0 #5a3d1a; }
+    .hero-caption { position:absolute; bottom:12px; right:14px;
+      font-size:.65rem; color:rgba(60,40,10,.3); letter-spacing:.06em; }
+
+    /* ── SECTION HEADER ── */
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 40px; }
+    @media (max-width: 680px) { .wrap { padding: 0 24px; } }
+
+    .sec-header {
+      padding: 80px 0 56px;
+      border-top: 1px solid var(--border);
+      display: flex; align-items: baseline; gap: 20px;
+    }
+    .sec-letter {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 4.5rem; font-weight: 300;
+      line-height: 1; color: #ddd8ce; flex-shrink: 0; letter-spacing: -.04em;
+    }
+    .sec-text-block { }
+    .sec-tag {
+      display: inline-block; font-size: .68rem; font-weight: 500;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--gray-lt); border-bottom: 1px solid var(--border);
+      padding-bottom: 3px; margin-bottom: 10px;
+    }
+    .sec-headline {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-weight: 400; line-height: 1.4; margin-bottom: 6px;
+    }
+    .sec-sub { color: var(--gray); font-size: .9rem; }
+
+    /* ── SET BLOCK ── */
+    .set-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+      padding: 0 0 96px;
+    }
+    .set-block + .set-block { padding-top: 0; }
+    @media (max-width: 780px) {
+      .set-block { grid-template-columns: 1fr; gap: 32px; padding-bottom: 64px; }
+    }
+
+    /* reverse alternating */
+    .set-block.reverse .set-photos { order: 2; }
+    .set-block.reverse .set-content { order: 1; }
+    @media (max-width: 780px) {
+      .set-block.reverse .set-photos { order: 1; }
+      .set-block.reverse .set-content { order: 2; }
+    }
+
+    /* ── PHOTO COLUMN ── */
+    .set-photos { display: flex; flex-direction: column; gap: 8px; }
+    .photo-main {
+      width: 100%; aspect-ratio: 4/3;
+      object-fit: cover; background: #f0ebe0;
+    }
+    .photo-sub-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .photo-sub {
+      width: 100%; aspect-ratio: 1/1;
+      object-fit: cover; background: #f0ebe0;
+    }
+
+    /* ── TEXT COLUMN ── */
+    .set-content { padding-top: 8px; }
+    .set-meta {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .set-badge {
+      font-size: .68rem; font-weight: 500; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gray-lt);
+      border: 1px solid var(--border); border-radius: 2px;
+      padding: 3px 10px;
+    }
+    .set-badge.push { background: var(--ink); color: #fff; border-color: var(--ink); }
+    .set-num { font-size: .72rem; color: var(--gray-lt); letter-spacing: .06em; }
+
+    .set-headline {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+      font-weight: 400; line-height: 1.5;
+      margin-bottom: 18px; letter-spacing: -.005em;
+    }
+
+    .set-point {
+      color: var(--gray); font-size: .92rem; line-height: 1.9;
+      margin-bottom: 28px; font-weight: 300;
+    }
+
+    /* product list */
+    .prod-list { margin-bottom: 24px; }
+    .prod-list-label {
+      font-size: .66rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--gray-lt); margin-bottom: 10px; font-weight: 400;
+    }
+    .prod-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 9px 0; border-bottom: 1px solid #f2ede6;
+      gap: 12px;
+    }
+    .prod-row:last-child { border-bottom: none; }
+    .prod-info { display: flex; align-items: center; gap: 10px; }
+    .prod-thumb {
+      width: 40px; height: 40px; object-fit: cover;
+      background: #f0ebe0; flex-shrink: 0;
+    }
+    .prod-name { font-size: .88rem; font-weight: 400; }
+    .prod-price { font-size: .85rem; color: var(--gray); white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .prod-row.total {
+      border-top: 1px solid var(--border); border-bottom: none;
+      padding-top: 12px; margin-top: 4px;
+    }
+    .prod-row.total .prod-name { font-weight: 700; font-size: .9rem; }
+    .prod-row.total .prod-price { color: var(--oak); font-weight: 700; font-size: 1rem; }
+
+    /* price block */
+    .price-block { margin-bottom: 24px; }
+    .price-main {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.9rem; font-weight: 400;
+      color: var(--oak); letter-spacing: -.02em; line-height: 1;
+      margin-bottom: 4px;
+    }
+    .price-note { font-size: .78rem; color: var(--gray-lt); }
+
+    /* CTA */
+    .btn-set {
+      display: block; width: 100%; padding: 14px 24px;
+      background: var(--ink); color: #fff;
+      text-align: center; font-size: .88rem;
+      font-weight: 500; letter-spacing: .08em;
+      cursor: pointer; border: none;
+      font-family: 'Noto Sans JP', sans-serif;
+      transition: background .18s, opacity .18s;
+    }
+    .btn-set:hover { background: var(--oak); }
+    .btn-ghost-link {
+      display: inline-block; font-size: .8rem; color: var(--gray-lt);
+      margin-top: 12px; letter-spacing: .04em; text-decoration: underline;
+      text-underline-offset: 3px; cursor: pointer; background: none; border: none;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .btn-ghost-link:hover { color: var(--ink); }
+
+    /* ── CAMPAIGN STRIP ── */
+    .campaign-strip {
+      display: flex; align-items: center; gap: 8px;
+      background: #fffaf0; border: 1px solid #e8c84a;
+      border-radius: 3px; padding: 8px 14px;
+      margin-bottom: 20px; font-size: .83rem; line-height: 1.5;
+    }
+    .campaign-icon { font-size: 1rem; flex-shrink: 0; }
+    .campaign-text { color: #7a5800; }
+    .campaign-text strong { color: #5c4000; font-weight: 700; }
+
+    /* discount row */
+    .discount-row { background: #fffaf0; margin: 0 -2px; padding: 10px 2px; }
+    .discount-row .prod-name { color: #7a5800; font-weight: 500; font-size: .85rem; }
+    .discount-price { color: #c07800 !important; font-weight: 700 !important; font-size: 1.05rem !important; }
+
+    /* ── SECTION DIVIDER ── */
+    .section-gap { height: 32px; }
+
+    /* ── LEAD BOX ── */
+    .info-note {
+      border-left: 2px solid var(--border); padding: 10px 18px;
+      color: var(--gray); font-size: .88rem; line-height: 1.8;
+      margin-bottom: 48px; max-width: 680px;
+    }
+    .info-note strong { color: var(--ink); font-weight: 500; }
+
+    /* ── SUMMARY ── */
+    .summary-section {
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+    }
+    .summary-label { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gray-lt); margin-bottom: 12px; }
+    .summary-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      font-weight: 400; margin-bottom: 8px;
+    }
+    .summary-sub { color: var(--gray); font-size: .9rem; margin-bottom: 48px; }
+    .summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    @media (max-width: 680px) { .summary-grid { grid-template-columns: 1fr; gap: 28px; } }
+    .summary-item { }
+    .summary-step { font-size: .66rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gray-lt); margin-bottom: 10px; }
+    .summary-item h3 { font-family: 'Noto Serif JP', serif; font-size: 1.05rem; font-weight: 400; margin-bottom: 8px; }
+    .summary-item p { color: var(--gray); font-size: .88rem; line-height: 1.9; }
+    .summary-note {
+      margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border);
+      color: var(--gray); font-size: .88rem; max-width: 600px; line-height: 1.9;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      padding: 40px 0 56px;
+      border-top: 1px solid var(--border);
+    }
+    .footer-inner {
+      max-width: 1120px; margin: 0 auto; padding: 0 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .footer-brand {
+      font-family: 'Noto Serif JP', serif;
+      font-size: .78rem; font-weight: 500;
+      letter-spacing: .14em; text-transform: uppercase; color: var(--ink);
+    }
+    .footer-note { font-size: .75rem; color: var(--gray-lt); line-height: 1.8; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <span class="nav-brand">Ishinomaki Laboratory</span>
+      <div class="nav-links">
+        <a class="nav-link" href="#entrance">玄関</a>
+        <a class="nav-link" href="#stool">スツール</a>
+        <a class="nav-link" href="#living">リビング</a>
+        <a class="nav-link" href="#summary">まとめ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="wrap">
+    <div class="hero-section" style="padding-left:0; padding-right:0;">
+      <div>
+        <p class="hero-label">新生活セット提案 2026</p>
+        <h1 class="hero-title">暮らしを整える、<br>最初の1セット。</h1>
+        <p class="hero-body">まず玄関から、次にスツール、そして憧れのリビングへ。<br>石巻工房の家具で、新しい毎日の「定位置」をつくります。</p>
+        <div class="hero-stats">
+          <div><span class="stat-num">10</span><span class="stat-lbl">提案セット数</span></div>
+          <div><span class="stat-num">¥67k〜</span><span class="stat-lbl">価格帯（税込）</span></div>
+          <div><span class="stat-num">3</span><span class="stat-lbl">特集テーマ</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="rv-floor"></div><div class="rv-bench"></div><div class="rv-shelf"></div>
+        <div class="rv-rail"></div><div class="rv-hanger"></div><div class="rv-coat"></div>
+        <div class="rv-stool"></div><span class="hero-caption">IMAGE PLACEHOLDER</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       A: 玄関
+  ══════════════════════════════════ -->
+  <div class="wrap" id="entrance">
+    <div class="sec-header">
+      <span class="sec-letter">A</span>
+      <div class="sec-text-block">
+        <span class="sec-tag">特集① まず玄関から整える</span>
+        <h2 class="sec-headline">定位置づくりが、暮らしを変える</h2>
+        <p class="sec-sub">置く・掛ける・座る。3動作が揃えば、玄関は毎日ラクになります。</p>
+      </div>
+    </div>
+
+    <!-- SET 3 ── 推し -->
+    <div class="set-block" id="set3">
+      <div class="set-photos">
+        <img class="photo-main" src="https://cdn.shopify.com/s/files/1/1784/3143/products/shoe-shelf_kurikoma.jpg" alt="SHOES SHELF">
+        <div class="photo-sub-row" style="grid-template-columns: 1fr 1fr 1fr;">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/products/ishinomaki-bench.jpg" alt="ISHINOMAKI BENCH">
+          <img class="photo-sub" src="https://ishinomaki-lab.org/wp-content/uploads/2018/03/tombohanger_02.jpg" alt="TOMBO HANGER">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/products/drop-mini-yaku.jpg" alt="DROP mini">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge push">推し — Aの主役</span>
+          <span class="set-num">No. 3</span>
+        </div>
+        <h3 class="set-headline">玄関リセットセット<br>（鉄板）</h3>
+        <p class="set-point">「置く・掛ける・座る・まとめる」が全部揃う。<br>説明が少なくても売れる、玄関の鉄板構成です。</p>
+        <div class="campaign-strip">
+          <span class="campaign-icon">🎉</span>
+          <span class="campaign-text">15周年記念キャンペーン対象 — 15万以上で<strong>15% OFF</strong></span>
+        </div>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/ishinomaki-bench.jpg" alt="ISHINOMAKI BENCH">
+              <span class="prod-name">ISHINOMAKI BENCH</span>
+            </div>
+            <span class="prod-price">¥58,300</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/shoe-shelf_kurikoma.jpg" alt="SHOES SHELF">
+              <span class="prod-name">SHOES SHELF</span>
+            </div>
+            <span class="prod-price">¥52,800</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2018/03/tombohanger_02.jpg" alt="TOMBO HANGER">
+              <span class="prod-name">TOMBO HANGER（暫定）</span>
+            </div>
+            <span class="prod-price">¥34,100</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/drop-mini-yaku.jpg" alt="DROP mini">
+              <span class="prod-name">DROP mini</span>
+            </div>
+            <span class="prod-price">¥26,400</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥171,600</span>
+          </div>
+          <div class="prod-row discount-row">
+            <div class="prod-info"><span class="prod-name">15周年記念15%OFF後</span></div>
+            <span class="prod-price discount-price">¥145,860</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+        <button class="btn-ghost-link" onclick="document.getElementById('stool').scrollIntoView({behavior:'smooth'})">次：スツール導線へ →</button>
+      </div>
+    </div>
+
+    <!-- SET 4 ── reverse -->
+    <div class="set-block reverse" id="set4">
+      <div class="set-photos">
+        <img class="photo-main" src="https://cdn.shopify.com/s/files/1/1784/3143/products/ishinomaki-stool.jpg" alt="ISHINOMAKI STOOL">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/files/drop1.jpg" alt="DROP">
+          <img class="photo-sub" src="https://ishinomaki-lab.org/wp-content/uploads/2023/09/peg-5-02.jpg" alt="PEG 5">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge">買いやすい</span>
+          <span class="set-num">No. 4</span>
+        </div>
+        <h3 class="set-headline">玄関ミニセット<br>（入口商品）</h3>
+        <p class="set-point">鍵・郵便・マスク・傘を定位置化。<br>改善体感が早く、「まずこれ」に強いセットです。</p>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/ishinomaki-stool.jpg" alt="ISHINOMAKI STOOL">
+              <span class="prod-name">ISHINOMAKI STOOL</span>
+            </div>
+            <span class="prod-price">¥28,600</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/drop1.jpg" alt="DROP">
+              <span class="prod-name">DROP</span>
+            </div>
+            <span class="prod-price">¥37,400</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2023/09/peg-5-02.jpg" alt="PEG 5">
+              <span class="prod-name">PEG 5（暫定）</span>
+            </div>
+            <span class="prod-price">¥28,600</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥94,600</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+      </div>
+    </div>
+
+    <!-- SET 10 -->
+    <div class="set-block" id="set10">
+      <div class="set-photos">
+        <img class="photo-main" src="https://ishinomaki-lab.org/wp-content/uploads/2017/11/steelhookbar_02.jpg" alt="STEEL HOOK BAR">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/products/drop-mini-yaku.jpg" alt="DROP mini">
+          <img class="photo-sub" src="https://ishinomaki-lab.org/wp-content/uploads/2023/09/peg-5-02.jpg" alt="PEG 5">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge">追加購入向き</span>
+          <span class="set-num">No. 10</span>
+        </div>
+        <h3 class="set-headline">壁面整うセット<br>（買いやすい）</h3>
+        <p class="set-point">壁面の「散らかり」を一気に回収。<br>迷いが少なく、玄関ミニの次の一手にも最適です。</p>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/drop-mini-yaku.jpg" alt="DROP mini">
+              <span class="prod-name">DROP mini</span>
+            </div>
+            <span class="prod-price">¥26,400</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2017/11/steelhookbar_02.jpg" alt="STEEL HOOK BAR">
+              <span class="prod-name">STEEL HOOK BAR（暫定）</span>
+            </div>
+            <span class="prod-price">¥12,100</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2023/09/peg-5-02.jpg" alt="PEG 5">
+              <span class="prod-name">PEG 5（暫定）</span>
+            </div>
+            <span class="prod-price">¥28,600</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥67,100</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+      </div>
+    </div>
+
+    <!-- SET 9 ── reverse -->
+    <div class="set-block reverse" id="set9">
+      <div class="set-photos">
+        <img class="photo-main" src="https://cdn.shopify.com/s/files/1/1784/3143/files/IKS_BOOKSTAND_Kurikoma_basic_OG.jpg" alt="IKS BOOKSTAND">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://ishinomaki-lab.org/wp-content/uploads/2017/11/isemagazinerack_02.jpg" alt="ISE MAGAZINE RACK">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/products/mirrorshelftop.jpg" alt="MIRROR SHELF">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge">セット入門</span>
+          <span class="set-num">No. 9</span>
+        </div>
+        <h3 class="set-headline">見せる収納<br>スターターセット</h3>
+        <p class="set-point">「見せる収納」の最初の1セット。<br>玄関→壁面→収納の導線を自然につなぎます。</p>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/IKS_BOOKSTAND_Kurikoma_basic_OG.jpg" alt="IKS BOOKSTAND">
+              <span class="prod-name">IKS BOOKSTAND</span>
+            </div>
+            <span class="prod-price">¥22,000</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2017/11/isemagazinerack_02.jpg" alt="ISE MAGAZINE RACK">
+              <span class="prod-name">ISE MAGAZINE RACK</span>
+            </div>
+            <span class="prod-price">¥45,100</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/mirrorshelftop.jpg" alt="MIRROR SHELF">
+              <span class="prod-name">MIRROR SHELF</span>
+            </div>
+            <span class="prod-price">¥14,300</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥81,400</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+      </div>
+    </div>
+  </div><!-- /wrap -->
+
+  <!-- ══════════════════════════════════
+       D: スツール
+  ══════════════════════════════════ -->
+  <div class="wrap" id="stool">
+    <div class="sec-header">
+      <span class="sec-letter">D</span>
+      <div class="sec-text-block">
+        <span class="sec-tag">特集② スツールで暮らしが回る</span>
+        <h2 class="sec-headline">引っ越し直後に一番使える家具</h2>
+        <p class="sec-sub">まず1脚、次にもう1脚。脚数が伸びると客単価が自然に上がります。</p>
+      </div>
+    </div>
+
+    <!-- SET 1 ── 推し -->
+    <div class="set-block" id="set1">
+      <div class="set-photos">
+        <img class="photo-main" src="https://ishinomaki-lab.org/wp-content/uploads/2019/05/aa-desk-nfj1-1200x800.jpg" alt="AA DESK">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/files/aa-stool_og_yaku1_4ba1db7b-4054-4a0b-900e-93068ba72d26.webp" alt="AA STOOL">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/files/IKS_BOOKSTAND_Kurikoma_basic_OG.jpg" alt="IKS BOOKSTAND">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge push">推し — Dの主役</span>
+          <span class="set-num">No. 1</span>
+        </div>
+        <h3 class="set-headline">在宅ワーク<br>即スタートセット</h3>
+        <p class="set-point">AA STOOLは「分けて使える」ので、セット化と相性抜群。<br>テレワーク需要に直結します。</p>
+        <div class="campaign-strip">
+          <span class="campaign-icon">🎉</span>
+          <span class="campaign-text">15周年記念キャンペーン対象 — 15万以上で<strong>15% OFF</strong></span>
+        </div>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2019/05/aa-desk-nfj1-1200x800.jpg" alt="AA DESK">
+              <span class="prod-name">AA DESK</span>
+            </div>
+            <span class="prod-price">¥104,500</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/aa-stool_og_yaku1_4ba1db7b-4054-4a0b-900e-93068ba72d26.webp" alt="AA STOOL">
+              <span class="prod-name">AA STOOL</span>
+            </div>
+            <span class="prod-price">¥52,800</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/IKS_BOOKSTAND_Kurikoma_basic_OG.jpg" alt="IKS BOOKSTAND">
+              <span class="prod-name">IKS BOOKSTAND</span>
+            </div>
+            <span class="prod-price">¥22,000</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥179,300</span>
+          </div>
+          <div class="prod-row discount-row">
+            <div class="prod-info"><span class="prod-name">15周年記念15%OFF後</span></div>
+            <span class="prod-price discount-price">¥152,405</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+        <button class="btn-ghost-link" onclick="document.getElementById('entrance').scrollIntoView({behavior:'smooth'})">← 玄関へ戻る</button>
+      </div>
+    </div>
+
+    <!-- SET 2 ── reverse -->
+    <div class="set-block reverse" id="set2">
+      <div class="set-photos">
+        <img class="photo-main" src="https://cdn.shopify.com/s/files/1/1784/3143/files/HAFU_DESK_natural_basic01_MP.png" alt="HAFU DESK">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/products/stand-stool_kurikoma.jpg" alt="STAND STOOL">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/products/mirrorshelftop.jpg" alt="MIRROR SHELF">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge">省スペース</span>
+          <span class="set-num">No. 2</span>
+        </div>
+        <h3 class="set-headline">"置くだけ書斎"<br>ミニマムセット</h3>
+        <p class="set-point">「作業・身支度」まで1セットで完結。<br>一人暮らしの限られた空間に対応します。</p>
+        <div class="campaign-strip">
+          <span class="campaign-icon">🎉</span>
+          <span class="campaign-text">15周年記念キャンペーン対象 — 15万以上で<strong>15% OFF</strong></span>
+        </div>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/HAFU_DESK_natural_basic01_MP.png" alt="HAFU / RIN DESK">
+              <span class="prod-name">HAFU DESK MP（または RIN DESK）</span>
+            </div>
+            <span class="prod-price">¥154,000</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/stand-stool_kurikoma.jpg" alt="STAND STOOL">
+              <span class="prod-name">STAND STOOL</span>
+            </div>
+            <span class="prod-price">¥37,400</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/mirrorshelftop.jpg" alt="MIRROR SHELF">
+              <span class="prod-name">MIRROR SHELF</span>
+            </div>
+            <span class="prod-price">¥14,300</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥205,700</span>
+          </div>
+          <div class="prod-row discount-row">
+            <div class="prod-info"><span class="prod-name">15周年記念15%OFF後</span></div>
+            <span class="prod-price discount-price">¥174,845</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+      </div>
+    </div>
+
+    <!-- SET 8 -->
+    <div class="set-block" id="set8">
+      <div class="set-photos">
+        <img class="photo-main" src="https://cdn.shopify.com/s/files/1/1784/3143/files/1_90_BENCH_Norm_Architects.jpg" alt="90° BENCH">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/products/kobo-tabla.jpg" alt="KOBO TABLE">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/files/kobosidestool1.png" alt="KOBO SIDE STOOL">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge">人数調整◎</span>
+          <span class="set-num">No. 8</span>
+        </div>
+        <h3 class="set-headline">2人のダイニング<br>（ベンチ主役）セット</h3>
+        <p class="set-point">「ベンチ＋スツール」は絵が良く、人数調整もしやすい。<br>ダイニングの理想形です。</p>
+        <div class="campaign-strip">
+          <span class="campaign-icon">🎉</span>
+          <span class="campaign-text">15周年記念キャンペーン対象 — 15万以上で<strong>15% OFF</strong></span>
+        </div>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/1_90_BENCH_Norm_Architects.jpg" alt="90° BENCH">
+              <span class="prod-name">90° BENCH</span>
+            </div>
+            <span class="prod-price">¥132,000</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/products/kobo-tabla.jpg" alt="KOBO TABLE">
+              <span class="prod-name">KOBO TABLE</span>
+            </div>
+            <span class="prod-price">¥236,500</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/kobosidestool1.png" alt="KOBO SIDE STOOL">
+              <span class="prod-name">KOBO SIDE STOOL</span>
+            </div>
+            <span class="prod-price">¥44,000</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥412,500</span>
+          </div>
+          <div class="prod-row discount-row">
+            <div class="prod-info"><span class="prod-name">15周年記念15%OFF後</span></div>
+            <span class="prod-price discount-price">¥350,625</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+      </div>
+    </div>
+
+    <!-- SET 7 ── reverse -->
+    <div class="set-block reverse" id="set7">
+      <div class="set-photos">
+        <img class="photo-main" src="https://cdn.shopify.com/s/files/1/1784/3143/files/yagura-1100-basic.webp" alt="YAGURA ROUND TABLE">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/files/OBON_CHAIR_WOODENSEAT_natural_basic_MP.jpg" alt="OBON CHAIR">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/files/OBON_CHAIR_UPHOLSTERED_Steelcut_Trio_3__0205_basic_MP.jpg" alt="OBON CHAIR 張座">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge">脚数が伸びる</span>
+          <span class="set-num">No. 7</span>
+        </div>
+        <h3 class="set-headline">来客ウェルカム<br>（ラウンド）セット</h3>
+        <p class="set-point">椅子が増える構成でセット化による売上が跳ねやすい。<br>「来客に備える」理由が強く効きます。</p>
+        <div class="campaign-strip">
+          <span class="campaign-icon">🎉</span>
+          <span class="campaign-text">15周年記念キャンペーン対象 — 15万以上で<strong>15% OFF</strong></span>
+        </div>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/yagura-1100-basic.webp" alt="YAGURA ROUND TABLE">
+              <span class="prod-name">YAGURA ROUND TABLE</span>
+            </div>
+            <span class="prod-price">¥286,000</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/OBON_CHAIR_WOODENSEAT_natural_basic_MP.jpg" alt="OBON CHAIR">
+              <span class="prod-name">OBON CHAIR ×2</span>
+            </div>
+            <span class="prod-price">¥182,600</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/OBON_CHAIR_UPHOLSTERED_Steelcut_Trio_3__0205_basic_MP.jpg" alt="OBON CHAIR 張座">
+              <span class="prod-name">OBON CHAIR 張座 - Maker Pack</span>
+            </div>
+            <span class="prod-price">¥104,500</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥573,100</span>
+          </div>
+          <div class="prod-row discount-row">
+            <div class="prod-info"><span class="prod-name">15周年記念15%OFF後</span></div>
+            <span class="prod-price discount-price">¥487,135</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+      </div>
+    </div>
+  </div><!-- /wrap -->
+
+  <!-- ══════════════════════════════════
+       憧れ: リビング
+  ══════════════════════════════════ -->
+  <div class="wrap" id="living">
+    <div class="sec-header">
+      <span class="sec-letter" style="font-size:2.4rem; letter-spacing:-.01em; padding-bottom:4px;">憧れ</span>
+      <div class="sec-text-block">
+        <span class="sec-tag">特集③ リビング "くつろぎ" 完成</span>
+        <h2 class="sec-headline">夢を見せる、憧れ枠</h2>
+        <p class="sec-sub">高単価でも「これで完成」の理由を与えて、ソファ単品の迷いを刈り取ります。</p>
+      </div>
+    </div>
+
+    <!-- SET 6 ── 推し -->
+    <div class="set-block" id="set6">
+      <div class="set-photos">
+        <img class="photo-main" src="https://cdn.shopify.com/s/files/1/1784/3143/files/KOBO_SOFA_2P_Maple__0722_front_MP.png" alt="KOBO SOFA 2P - Maker Pack">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://ishinomaki-lab.org/wp-content/uploads/2019/05/kobocoffeetable_01.jpg" alt="KOBO COFFEE TABLE">
+          <img class="photo-sub" src="https://cdn.shopify.com/s/files/1/1784/3143/files/kobosidestool1.png" alt="KOBO SIDE STOOL">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge push">憧れ — これで完成</span>
+          <span class="set-num">No. 6</span>
+        </div>
+        <h3 class="set-headline">KOBOリビング<br>完成セット</h3>
+        <p class="set-point">ソファ単品の迷いを「コーヒーテーブル＋スツールで完成」で<br>まとめて解決します。高単価でも理由が立ちます。</p>
+        <div class="campaign-strip">
+          <span class="campaign-icon">🎉</span>
+          <span class="campaign-text">15周年記念キャンペーン対象 — 15万以上で<strong>15% OFF</strong></span>
+        </div>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/KOBO_SOFA_2P_Maple__0722_front_MP.png" alt="KOBO SOFA 2P - Maker Pack">
+              <span class="prod-name">KOBO SOFA 2P - Maker Pack</span>
+            </div>
+            <span class="prod-price">¥313,500</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2019/05/kobocoffeetable_01.jpg" alt="KOBO COFFEE TABLE">
+              <span class="prod-name">KOBO COFFEE TABLE</span>
+            </div>
+            <span class="prod-price">¥47,300</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/kobosidestool1.png" alt="KOBO SIDE STOOL">
+              <span class="prod-name">KOBO SIDE STOOL</span>
+            </div>
+            <span class="prod-price">¥44,000</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥404,800</span>
+          </div>
+          <div class="prod-row discount-row">
+            <div class="prod-info"><span class="prod-name">15周年記念15%OFF後</span></div>
+            <span class="prod-price discount-price">¥344,080</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+      </div>
+    </div>
+
+    <!-- SET 5 ── reverse -->
+    <div class="set-block reverse" id="set5">
+      <div class="set-photos">
+        <img class="photo-main" src="https://cdn.shopify.com/s/files/1/1784/3143/files/105__LOUNGE_CHAIR_Hallingdal_65__0110_basic_MP.png" alt="105° LOUNGE CHAIR">
+        <div class="photo-sub-row">
+          <img class="photo-sub" src="https://ishinomaki-lab.org/wp-content/uploads/2017/11/isemagazinerack_02.jpg" alt="ISE MAGAZINE RACK">
+          <img class="photo-sub" src="https://ishinomaki-lab.org/wp-content/uploads/2023/09/side-table-02.jpg" alt="SIDE TABLE">
+        </div>
+      </div>
+      <div class="set-content">
+        <div class="set-meta">
+          <span class="set-badge">LP映え◎</span>
+          <span class="set-num">No. 5</span>
+        </div>
+        <h3 class="set-headline">読書コーナー<br>完成セット</h3>
+        <p class="set-point">「絵が作れる」のでLP映えしやすい。<br>写真1枚で世界観が伝わり、導線が強くなります。</p>
+        <div class="campaign-strip">
+          <span class="campaign-icon">🎉</span>
+          <span class="campaign-text">15周年記念キャンペーン対象 — 15万以上で<strong>15% OFF</strong></span>
+        </div>
+        <div class="prod-list">
+          <div class="prod-list-label">構成商品</div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://cdn.shopify.com/s/files/1/1784/3143/files/105__LOUNGE_CHAIR_Hallingdal_65__0110_basic_MP.png" alt="105° LOUNGE CHAIR">
+              <span class="prod-name">105° LOUNGE CHAIR</span>
+            </div>
+            <span class="prod-price">¥253,000</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2017/11/isemagazinerack_02.jpg" alt="ISE MAGAZINE RACK">
+              <span class="prod-name">ISE MAGAZINE RACK</span>
+            </div>
+            <span class="prod-price">¥45,100</span>
+          </div>
+          <div class="prod-row">
+            <div class="prod-info">
+              <img class="prod-thumb" src="https://ishinomaki-lab.org/wp-content/uploads/2023/09/side-table-02.jpg" alt="SIDE TABLE">
+              <span class="prod-name">SIDE TABLE（暫定）</span>
+            </div>
+            <span class="prod-price">¥33,000</span>
+          </div>
+          <div class="prod-row total">
+            <div class="prod-info"><span class="prod-name">セット合計（税込）</span></div>
+            <span class="prod-price">¥331,100</span>
+          </div>
+          <div class="prod-row discount-row">
+            <div class="prod-info"><span class="prod-name">15周年記念15%OFF後</span></div>
+            <span class="prod-price discount-price">¥281,435</span>
+          </div>
+        </div>
+        <button class="btn-set">このセットを見る</button>
+      </div>
+    </div>
+
+    <!-- 補足 notes -->
+    <div style="padding-bottom: 48px;">
+      <div class="info-note">
+        <strong>ダイニング・来客（補足）</strong> — セット7・8は「脚数」としてスツールセクションに配置しています。<br>
+        <strong>収納（補足）</strong> — セット9・10を玄関セクション内に配置しています（「玄関 → 壁面 → 収納」の導線として機能します）。
+      </div>
+    </div>
+  </div><!-- /wrap -->
+
+  <!-- SUMMARY -->
+  <div class="wrap" id="summary">
+    <div class="summary-section" style="padding-left:0; padding-right:0;">
+      <p class="summary-label">このラフの狙い</p>
+      <h2 class="summary-title">3ステップで迷いを減らす</h2>
+      <p class="summary-sub">最短CV → 客単価アップ → 夢を見せる、の順に誘導します。</p>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <div class="summary-step">Step 01 — A</div>
+          <h3>玄関から整える</h3>
+          <p>「定位置づくり」で改善体感が早い。最短でCVさせる入口です。</p>
+        </div>
+        <div class="summary-item">
+          <div class="summary-step">Step 02 — D</div>
+          <h3>スツールで単価を上げる</h3>
+          <p>脚数を増やすことで客単価を自然に引き上げます。セット化の旨みが大きい。</p>
+        </div>
+        <div class="summary-item">
+          <div class="summary-step">Step 03 — 憧れ</div>
+          <h3>夢をリビングで見せる</h3>
+          <p>「これで完成」の理由を与え、高単価でも納得感のある購入を後押しします。</p>
+        </div>
+      </div>
+      <p class="summary-note">このラフに「実画像URL」と「商品リンク」を差し込むと、そのままLP原型になります。</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Ishinomaki Laboratory</div>
+        <div class="footer-note" style="margin-top:6px;">新生活セット提案 2026</div>
+      </div>
+      <div class="footer-note">
+        ※ 本ページはデザインラフです。<br>
+        価格はすべて税込・暫定表示を含みます。
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
